@@ -16,7 +16,7 @@ def test_rate_note_is_acceptable(note):
 def test_rate_note_is_good(note):
     assert rate_note(note)=="good"
 
-@pytest.mark.parametrize("note",[16,17,18])
+@pytest.mark.parametrize("note",[16,17,18,19])
 def test_rate_note_is_excellent(note):
     assert rate_note(note)=="excellent"
 
