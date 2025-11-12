@@ -3,8 +3,6 @@ def rate_note(note :int)->str:
      return "unsuccessful"
     if note==10 or note==11:
         return "acceptable"
-    if note== 12 :
-     return "good"
-    if note== 13:
+    if note== 12 or note==13 :
      return "good"
 
