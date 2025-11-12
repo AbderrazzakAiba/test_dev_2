@@ -1,2 +1,2 @@
-def rate_note():
-    pass
+def rate_note(note :int)->str:
+    return "unsuccessful"
