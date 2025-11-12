@@ -16,15 +16,14 @@ def test_rate_note_is_acceptable(note):
 def test_rate_note_is_good(note):
     assert rate_note(note)=="good"
 
-@pytest.mark.parametrize("note",[16,17])
+@pytest.mark.parametrize("note",[16,17,18])
 def test_rate_note_is_excellent(note):
     assert rate_note(note)=="excellent"
 
 
 def test_rate_note_14_is_very_good():
     assert rate_note(14)=="very good"
-def test_rate_note_18_is_excellent():
-    assert rate_note(18)=="excellent"
+
 
 
 
