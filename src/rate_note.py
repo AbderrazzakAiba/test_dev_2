@@ -7,4 +7,6 @@ def rate_note(note :int)->str:
      return "good"
     if note== 16 or note==17 or note==18:
         return "excellent"
+    if note==19:
+        return "excellent"
     return "very good"
