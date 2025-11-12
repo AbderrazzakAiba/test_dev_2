@@ -1,10 +1,11 @@
+import pytest
+
 from src.rate_note import rate_note
 
 
+@pytest.mark.parametrize("note",[8,9])
+def test_rate_note_is_unsuccessful(note):
+    assert rate_note(note)=="unsuccessful"
 
-def test_rate_note_9_is_unsuccessful():
-    assert rate_note(9)=="unsuccessful"
 def test_rate_note_10_is_acceptable():
     assert rate_note(10)=="acceptable"
-def test_rate_note_8_is_unsuccessful():
-    assert rate_note(8)=="unsuccessful"
