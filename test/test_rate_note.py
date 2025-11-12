@@ -9,3 +9,5 @@ def test_rate_note_is_unsuccessful(note):
 
 def test_rate_note_10_is_acceptable():
     assert rate_note(10)=="acceptable"
+def test_rate_note_12_is_good():
+    assert rate_note(12)=="good"
